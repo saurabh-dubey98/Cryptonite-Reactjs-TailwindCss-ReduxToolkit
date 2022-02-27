@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { Layout, Homepage, News, CryptoCurrencies, CryptoDetails, PageNotFound } from './components';
 import { store } from './app/store';

@@ -8,7 +8,7 @@ const PageNotFound = () => {
         return () => {
             clearTimeout(clear);
         }
-    }, [])
+    }, [navigate])
 
     return <div>Error 404</div>;
 };
