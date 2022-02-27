@@ -1,6 +1,6 @@
 # Cryptonite
 
-[Lin to live demo](https://github.com/facebook/create-react-app).
+[Lin to live demo](https://cryptonite-reactjs-tailwind-css-redux-toolkit-mgl7fwa7f.vercel.app/).
 
 ## Available Scripts
 
