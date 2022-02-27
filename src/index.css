@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    .row-bottom-border tr:not(:last-of-type) {
+        border-bottom: 1px solid rgba(79, 189, 186, 0.4);
+        height: 50px;
+    }
+
+    .row-bottom-border tr:last-of-type {
+        height: 50px;
+    }
+
+    .table-headings-left tr th {
+        text-align: left;
+    }
+    .table-data-right tr td {
+        text-align: right;
+    }
+
+    .default-h3-and-p h3,
+    .default-h3-and-p p {
+        margin-top: 10px;
+    }
+
+    .default-h3-and-p h3 {
+        font-weight: 600;
+        font-size: 1.17em
+    }
+    .default-h3-and-p p {
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 1.9;
+    }
+
+    .loading-spinner {
+        width: 40px;
+        height: 40px;
+        border: 5px solid #aefeff;
+        border-top-color: #072227;
+        border-radius: 50%;
+        animation: loading 1s ease-out infinite;
+    }
+
+    @keyframes loading {
+        to {
+            transform: rotate(1turn);
+        }
+    }
 }
